@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seoul — Photo Gallery</title>
+  <meta name="description" content="A simple three-section photo gallery of Seoul: Urban, Artistic, Landmarks." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Layers of Seoul - My Perspective</h1>
+      <p class="tagline">Urban • Artistic • Landmarks</p>
+      <div class="filters" role="toolbar" aria-label="Filter photos by theme">
+        <button class="chip" data-filter="all">All</button>
+        <button class="chip" data-filter="urban">Urban Seoul</button>
+        <button class="chip" data-filter="artistic">Artistic Seoul</button>
+        <button class="chip" data-filter="landmark">Landmarks</button>
+      </div>      
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="theme-intro">
+      <h2>Mechanical Processes, Personal Meaning</h2>
+      <p>
+        This gallery brings together two mechanical processes: photography and coding.
+        Photography captures moments as visual data, while code arranges and reveals them
+        in a structured way. Although both processes are technical and precise, the
+        experience they create is deeply personal. The images reflect the places,
+        textures, and moods that shaped my time in Seoul, and the website becomes a way
+        to reassemble those memories into a single narrative.
+      </p>
+    </section>
+    
+    <section class="gallery" id="gallery" aria-live="polite">
+
+      <!--URBAN-->
+      <figure class="card" data-theme="urban" data-location="Alleyway" data-year="">
+        <img src="images/urban-alley.jpeg" alt="Narrow alley of small restaurants in Seoul with bright signs and people walking">
+        <figcaption>
+          <h3>Urban Seoul</h3>
+          <p>Seoul’s energy lives in its alleyways where neon signs crowd above you and the smell of food spills into the streets.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="urban" data-location="Gwangjang Market" data-year="2025">
+        <img src="images/traditional-market.jpeg" alt="A busy food market in Seoul with signs lined under an arched roof">
+        <figcaption>
+          <h3>Urban Seoul</h3>
+          <p>Markets like this are Seoul’s heartbeat. Not tourist attractions, but living ecosystems of locals, vendors, and stories.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="urban" data-location="Sewoon District" data-year="2024">
+        <img src="images/electronics-shop.jpeg" alt="Old electronics and stacked VCRs in a small Seoul shop">
+        <figcaption>
+          <h3>Urban Seoul</h3>
+          <p>Behind modern screens are decades of analog history, still alive in backstreet shops.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="urban" data-location="Cheonggyecheon" data-year="2025">
+        <img src="images/cheonggyecheon.jpeg" alt="Cheonggyecheon stream with towers and trees on both sides" loading="lazy" />
+        <figcaption>
+          <h3>Urban Seoul</h3>
+          <p>Cheonggyecheon runs through downtown—movement slowed by water and sky.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="urban" data-location="Namdaemun" data-year="2025">
+        <img src="images/namdaemun-city.jpeg" alt="Ancient city gate standing among glass office towers at dusk" loading="lazy" />
+        <figcaption>
+          <h3>Urban Seoul</h3>
+          <p>Namdaemun holds its ground while the skyline keeps climbing.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="urban" data-location="National Museum of Korea" data-year="2025">
+        <img src="images/nmk-performance.jpeg" alt="Crowd watching a drum and dance performance outside the National Museum of Korea" loading="lazy" />
+        <figcaption>
+          <h3>Urban Seoul</h3>
+          <p>Public plazas turn into stages for art shared with whoever walks by.</p>
+        </figcaption>
+      </figure>
+
+      <!--ARTISTIC-->
+      <figure class="card" data-theme="artistic" data-location="Itaewon Cafe" data-year="2025">
+        <img src="images/cafe-dessert.jpeg" alt="Minimalist café table with strawberry cake and napkin that reads 'good materials for life'">
+        <figcaption>
+          <h3>Artistic Seoul</h3>
+          <p>Seoul’s cafés aren’t just places to eat. They’re curated spaces where food is design and atmosphere is art.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="artistic" data-location="Sewoon District" data-year="2024">
+        <img src="images/cat-mural.jpeg" alt="Three cat faces painted on a yellow storefront shutter">
+        <figcaption>
+          <h3>Artistic Seoul</h3>
+          <p>Art in Seoul unexpectedly appears on closed storefronts, turning streets into open galleries.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="artistic" data-location="Itaewon" data-year="2025">
+        <img src="images/public-art.jpeg" alt="Public art on a large panel">
+        <figcaption>
+          <h3>Artistic Seoul</h3>
+          <p>Public art transforms Seoul’s architecture, turning transit spaces into visual narratives about everyday life.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="artistic" data-location="Muesum of Comtemporary Art" data-year="2025">
+        <img src="images/mmca-ron-mueck.jpeg" alt="Entrance signage for a Ron Mueck exhibit at MMCA Seoul" loading="lazy" />
+        <figcaption>
+          <h3>Artistic Seoul</h3>
+          <p>MMCA brings global voices to Seoul, showing the depths of Seoul's art scene.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="artistic" data-location="Muesum of Comtemporary Art" data-year="2025">
+        <img src="images/mmca-interior.jpeg" alt="Light-filled interior of MMCA with windows and frosted glass walls" loading="lazy" />
+        <figcaption>
+          <h3>Artistic Seoul</h3>
+          <p>Even the light is part of the exhibition—rooms.</p>
+        </figcaption>
+      </figure>
+
+      <!--LANDMARKS-->
+      <figure class="card" data-theme="landmark" data-location="Myeongdong" data-year="2025">
+        <img src="images/myeongdong-cathedral.jpeg" alt="Myeongdong Cathedral at the top of a staircase with visitors climbing up" loading="lazy" />
+        <figcaption>
+          <h3>Landmarks</h3>
+          <p>The Myeongdong Cathedral is a historic tower for quiet and community in the middle of shopping streets.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="landmark" data-location="Namsan" data-year="2025">
+        <img src="images/namsan-tower.jpeg" alt="Namsan Tower framed by trees against a blue sky" loading="lazy" />
+        <figcaption>
+          <h3>Landmarks</h3>
+          <p>Namsan Tower stands as Seoul’s compass point and a favorite meeting place.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="landmark" data-location="Taken on Namsan" data-year="2025">
+        <img src="images/lotte-tower-distance.jpeg" alt="Lotte Tower glowing in the distance over the Han River and city" loading="lazy" />
+        <figcaption>
+          <h3>Landmarks</h3>
+          <p>Light glares from the colossal Lotte Tower.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="landmark" data-location="Namsan Tower" data-year="2025">
+        <img src="images/namsan-locks.jpeg" alt="Fence covered with colorful love locks on Namsan" loading="lazy" />
+        <figcaption>
+          <h3>Landmarks</h3>
+          <p>Thousands of tiny love notes overlook the city.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="card" data-theme="landmark" data-location="" data-year="2025">
+        <img src="images/old-korean-structure.jpeg" alt="Traditional Korean structure in a grassy field with wildflowers" loading="lazy" />
+        <figcaption>
+          <h3>Landmarks</h3>
+          <p>Quiet history surrounded by grass and sky—a softer layer of Seoul.</p>
+        </figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Juno Song</small>
+    </div>
+  </footer>
+
+  <!-- IMAGE MODAL -->
+  <div id="imgModal" class="modal">
+    <div class="modal-content">
+      <span id="modalClose" class="close">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p id="modalLocation"></p>
+      <p id="modalYear"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

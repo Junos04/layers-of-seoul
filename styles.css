@@ -1,0 +1,178 @@
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background: #82a3ff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* --- Layout Wrappers --- */
+.wrap {
+  width: min(1100px, 90%);
+  margin: auto;
+}
+
+/* --- Header --- */
+.site-header {
+  background: rgb(255, 127, 127);
+  padding: 2rem 0 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.tagline {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/* --- Filter Chips --- */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: 0.15s ease;
+  font-size: 0.9rem;
+}
+
+.chip.active,
+.chip:hover {
+  background: #4285f4;
+  color: white;
+  border-color: #4285f4;
+}
+
+/* --- Gallery Grid --- */
+.gallery {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card figcaption {
+  padding: 1rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #1a1a1a;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* --- Footer --- */
+.site-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #e5e5e5;
+  color: #666;
+}
+
+/* --- Modal --- */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: min(600px, 90%);
+  max-height: 90%;
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease;
+}
+
+#modalImg {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.close {
+  float: right;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #555;
+  transition: 0.2s ease;
+}
+
+.close:hover {
+  color: #000;
+}
+
+#modalTitle {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#modalDesc,
+#modalLocation,
+#modalYear {
+  color: #444;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
